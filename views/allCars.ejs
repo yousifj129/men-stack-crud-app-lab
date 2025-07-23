@@ -13,6 +13,7 @@
       <% cars.forEach(car => {%>
       <li>
         <p>Car Name: <%= car.name %></p>
+        <p>Year:  <%= car.year %></p>
         <a href="/cars/<%= car._id  %>">See Car Details</a>
       </li>
       <% }); %>

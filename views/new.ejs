@@ -11,6 +11,12 @@
     <form action="/cars/new" method="post">
       <label for="name">Car Name</label>
       <input name="name" id="name" type="text" required minlength="2" />
+        
+      <label for="year">Year</label>
+      <input name="year" id="year" type="number" />
+
+        <label for="engineType">Engine Type</label>
+      <input name="engineType" id="engineType" type="text" />
 
       <label for="enginePower">Engine Power (hp)</label>
       <input name="enginePower" id="enginePower" type="text" />
@@ -20,6 +26,8 @@
 
       <label for="dragCoeff">dragCoeff</label>
       <input name="dragCoeff" id="dragCoeff" type="text" />
+
+
 
       <button type="submit">Submit</button>
     </form>

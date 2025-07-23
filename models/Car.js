@@ -16,6 +16,14 @@ const carSchema = new mongoose.Schema({
     dragCoeff:{
         type:Number,
         default:0.3
+    },
+    year:{
+        type:Number,
+        default:2000
+    },
+    engineType:{
+        type:String,
+        default:"V4"
     }
     
 }, {
