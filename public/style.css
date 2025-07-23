@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: wheat;
+}
+
+li {
+    border: white 1px solid;
+    text-decoration: none;
+    list-style-type: none;
+    width: 400px;
+    text-align: justify;
+    padding: 5px;
+    font-size: 14px;
+    transition: ease-in-out 0.2s;
+
+}
+
+li:hover {
+    font-size: 14.5px;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
