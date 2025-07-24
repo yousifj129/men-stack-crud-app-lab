@@ -16,8 +16,13 @@
         <p>Engine Type: <%= car.engineType %></p>
         <p>Car Weight: <%= car.weight %></p>
         <p>Drag Coeffecient: <%= car.dragCoeff %></p>
+        <p>ID: <%= car._id %></p>
       </li>
     </ul>
+    <a href="/cars/delete/<%= car._id  %>">Delete Car</a>
+    <a href="/cars/update/<%= car._id  %>">Update Car</a>
+
+    <br />
     <a href="/cars">Go Back</a>
   </body>
 </html>

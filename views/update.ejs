@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <!-- <link rel="stylesheet" href="../style.css" />  for some reason it makes an error-->
+</head>
+<body>
+    <h1>Update Car</h1>
+    <form action="/cars/update/<%= car._id %>" method="post">
+      <label for="name">Car Name</label>
+      <input name="name" id="name" type="text" required minlength="2" value="<%= car.name %>"/>
+        
+      <label for="year">Year</label>
+      <input name="year" id="year" type="number" value="<%= car.year %>"/>
+
+        <label for="engineType">Engine Type</label>
+      <input name="engineType" id="engineType" type="text" value="<%= car.engineType %>"/>
+
+<br>
+
+      <label for="enginePower">Engine Power (hp)</label>
+      <input name="enginePower" id="enginePower" type="text" value="<%= car.enginePower %>" />
+
+      <label for="weight">Weight in KG</label>
+      <input name="weight" id="weight" type="number" value="<%= car.weight %>"  />
+
+      <label for="dragCoeff">dragCoeff</label>
+      <input name="dragCoeff" id="dragCoeff" type="text" value="<%= car.dragCoeff %>" />
+
+
+
+      <button type="submit">Submit</button>
+    </form>
+    <a href="/cars">Go Back</a>
+</body>
+<style>body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: wheat;
+}
+
+li {
+    border: white 1px solid;
+    text-decoration: none;
+    list-style-type: none;
+    width: 400px;
+    text-align: justify;
+    padding: 5px;
+    font-size: 14px;
+    transition: ease-in-out 0.2s;
+
+}
+
+li:hover {
+    font-size: 14.5px;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}</style>
+</html>

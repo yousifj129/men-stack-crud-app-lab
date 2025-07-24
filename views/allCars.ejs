@@ -9,12 +9,20 @@
   <body>
     <h1>All Cars</h1>
     <a href="cars/new">Add A New Car</a>
+    <a href="cars/delete">Delete Car with ID</a>
+
     <ul>
       <% cars.forEach(car => {%>
       <li>
         <p>Car Name: <%= car.name %></p>
         <p>Year:  <%= car.year %></p>
-        <a href="/cars/<%= car._id  %>">See Car Details</a>
+        <div style="display: flex; flex-direction: row;">
+        <a href="/cars/<%= car._id  %>">See Car Details</a>  
+        <p>&nbsp;</p>
+        <a href="/cars/update/<%= car._id  %>">Update Car Details</a>  
+        <p>&nbsp;</p>
+        <a href="/cars/delete/<%= car._id  %>">Delete Car</a>
+        </div>
       </li>
       <% }); %>
     </ul>
