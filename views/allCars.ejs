@@ -16,11 +16,11 @@
       <li>
         <p>Car Name: <%= car.name %></p>
         <p>Year:  <%= car.year %></p>
-        <div style="display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: row; flex-basis: auto 0;">
         <a href="/cars/<%= car._id  %>">See Car Details</a>  
-        <p>&nbsp;</p>
+        - -
         <a href="/cars/update/<%= car._id  %>">Update Car Details</a>  
-        <p>&nbsp;</p>
+        - -
         <a href="/cars/delete/<%= car._id  %>">Delete Car</a>
         </div>
       </li>
